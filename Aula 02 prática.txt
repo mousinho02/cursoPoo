@@ -1,0 +1,33 @@
+Aula 02 (prática)
+
+BOTAR PONTO E VIRGULA NO FINAL 
+
+ Criando Classes e objetos em Java 
+ String <- caractere
+ float <- real
+ int <- inteiro
+ boolean <- logico
+ void <- sem retorno 
+ if <- se
+ else <- senao ou outro ou outra
+
+Como instanciar :
+"NomeDaClasse" "nomeDoObjeto" = new "NomeDaClasse()";
+ex: Caneta caneta1 = new Caneta();
+	
+Como atribuir um modelo a uma classe 
+"nomeDoObjeto"."modelo" = "oquevocedesejaatribuir";
+ex: caneta1.cor = "Azul";
+
+Como fazer uma void :
+void "nomedoModelo()" {
+
+}
+ex: void status() {
+  System.out.print("Uma caneta" + this.cor)
+}  
+this == nomeDoObejeto
+ //Só atribui as coisas no void dentro dos colchetes
+
+
+Exercicios : pegar as classes criadas por mim na aula passada e fazer na forma Java 
