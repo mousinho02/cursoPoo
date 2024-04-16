@@ -1,0 +1,59 @@
+Linguagem de Modelagem Unificada == UML 
+Diagrama de Classes <- O objeto será sempre um retângulo dividido por 3 linhas.
+PRIMEIRA LINHA <- NOME DA CLASSE
+SEGUNDA LINHA <- ATRIBUTOS DA CLASSE
+TERCEIRA LINHA <- METODOS () DA CLASSE
+EX :
+
+|-----------------------|                       
+|        Caneta         |
+|-----------------------|
+| modelo                |
+| cor                   |
+| ponta                 |
+|-----------------------|
+| escrever()            |
+| rabiscar()            |
+|-----------------------|
+
+Modificadores de Visibilidade 
+Visibilidade == indicam o nivel de acesso aos componentes internos de uma classe 
+Sendo 3 símbolos + - #
+
++ <- Público (a classe atual e todas as outras classes)
+- <- Privado (somente a classe atual)
+# <- Protegido (a classe atual e todas as suas sub-classes)
+
+|-----------------------|                       
+|        Caneta         |
+|-----------------------|
+|+ modelo               |
+|+ cor                  |
+|- ponta                |
+|# carga                |
+|-----------------------|
+|+ escrever()           |
+|+ rabiscar()           |
+|-----------------------|
+
+EX :
+
+  Definindo atributos e métodos a classe:
+  
+  publico String modelo;
+  privado float ponta;
+  protegido int carga;
+  
+  void escrever(){
+  
+  }
+  
+
+  Caneta caneta1 = new Caneta();
+  caneta1.modelo = "BIC";
+  caneta1.ponta = 0.6f;
+  caneta1.escrever(); 
+
+
+
+ 
