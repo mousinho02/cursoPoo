@@ -1,0 +1,32 @@
+Aula 02 teoria 
+
+o que é objeto(Java)? <- algo material ou abstrata que pode ser sentida por meio de suas caracteristicas, comportamento e estado atual 
+
+modelo <- classe <- 3 perguntas sendo elas: coisas que tenho? coisas que faço ? como estou agora ?
+EX de uma caneta 
+Atributos <- Coisas que tenho = modelo, cor, ponta, carga e tampada
+Métodos <- Coisas que faço = escrevo, pintar e rabiscar, tampar() e destampar()
+Estado <- Como estou agora = com 50% de carga e tampada
+
+Tranformar uma classe em um objeto (Instanciar)<- ex de fazer a uma caneta receber alguns atributos:
+caneta1 = novaCaneta
+caneta.cor = "azul"
+caneta.carga = 90% ...
+
+Abstração <- atributos mais importantes da sua classe 
+
+Funcao Atividades()
+Inicio
+  Teclado e a TV
+ 
+ Teclado 
+  Atributos<- digita(), mudaCor()
+  Métodos<- digita(), mudaCor(), barulho()
+  Estado<- roxo, digitando, fazendoBarulho 
+
+ TV
+  Atributos<- liga(), desliga(), mudaCanal(), aumentaVolume(), abaixaVolume()
+  Métodos<- ligo, desligo, mudoCanal, aumentoVolume, abaixoVolume
+  Estado<- desligada
+FimFuncao
+ 
