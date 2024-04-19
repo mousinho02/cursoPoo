@@ -1,0 +1,9 @@
+Métodos Especiais 
+Métodos Adicionais
+Getters ou get = pegar algo ou acessar a alguma informação
+
+Métodos Modificadores
+Setters ou set = adcicionar algo a uma váriavel 
+
+Método Construtos 
+Construct = funciona para construir uma "estrutura" facilitadora
