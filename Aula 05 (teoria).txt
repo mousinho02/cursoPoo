@@ -1,0 +1,65 @@
+Exemplo prático com Objetos 
+Atividade: fazer a conta de um banco virar um objeto
+
+nomeClasse: ContaBanco
+atributos:+ numConta,# tipo,- dono,- saldo,- status
+metodos:+ abrirConta(),+ fecharConta(),+ depositar(),+ sacar() e + pagarMensal()
+
+EX :
+
+Classe ContaBanco
+//Atributos
+public int numConta;
+protected String tipo;
+private String dono;
+private float saldo;
+private boolean status;
+
+
+//Métodos
+public Constructor(){
+saldo = 0;
+status = false;
+}
+
+public void setnumConta(n:int){
+numConta = n;
+}
+public void getnumConta(){
+return numConta;
+}
+public void settipo(t:String){
+tipo = t;
+}
+public void gettipo(){
+return tipo;
+}
+public void setdono(d:String){
+dono = d;
+}
+public void getdono(){
+return dono;
+}
+public void setsaldo(s:float){
+saldo = s;
+}
+public void getsaldo(){
+return saldo;
+}
+public void setstatus(s:boolean){
+status = s;
+}
+public void getstatus(){
+return status;
+}
+
+public void abrirConta(t:caractere){
+settipo(t);
+setStatus(true);
+if (t =="CP")
+saldo = 150;
+else{
+saldo = 50;
+}
+}
+
