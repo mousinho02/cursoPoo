@@ -22,44 +22,87 @@ saldo = 0;
 status = false;
 }
 
-public void setnumConta(n:int){
+public void setnumConta(int f){
 numConta = n;
 }
-public void getnumConta(){
+public int getnumConta(){
 return numConta;
 }
-public void settipo(t:String){
+public void settipo(String t){
 tipo = t;
 }
-public void gettipo(){
+public String gettipo(){
 return tipo;
 }
-public void setdono(d:String){
+public void setdono(String d){
 dono = d;
 }
-public void getdono(){
+public String getdono(){
 return dono;
 }
-public void setsaldo(s:float){
+public void setsaldo(float s){
 saldo = s;
 }
-public void getsaldo(){
+public float getsaldo(){
 return saldo;
 }
-public void setstatus(s:boolean){
+public void setstatus(boolean s){
 status = s;
 }
-public void getstatus(){
+public boolean getstatus(){
 return status;
 }
 
-public void abrirConta(t:caractere){
+public void abrirConta(String t){
 settipo(t);
-setStatus(true);
-if (t =="CP")
+setstatus(true);
+if (t =="CC")
+saldo = 50f;
+else{if (t =="CP")
 saldo = 150;
-else{
-saldo = 50;
-}
 }
 
+public void fecharConta (){
+if (saldo > 0)
+sout + TAB ("Conta com dinheiro");
+else{if (saldo < 0)
+sout + TAB ("Conta em débito");
+}
+else{
+setstatus(false);
+}
+}
+public void depositar(float v){
+if (status = true)
+setsaldo(getsaldo() + v);
+else {
+sout + TAB ("Impossivel depositar")
+}
+}
+public void sacar(float v){
+if (status = true) 
+if (saldo > v)
+setsaldo(getsaldo() - v);
+else{
+sout + TAB ("Saldo Insuficiente");
+}
+else{
+sout + TAB ("Impossivel Sacar");
+}
+}
+public void pagarMensal(){
+float v;
+if (tipo == "CC")
+v = 12;
+else {if (tipo == "CP")
+v = 20;
+if (status = true)
+setsaldo(getsaldo() - v);
+else{
+sout + TAB ("Saldo Insuficiente");
+else{
+sout + TAB ("Impossivel pagar mensalidade");
+} 
+}
+}
+}
