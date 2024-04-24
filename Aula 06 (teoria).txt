@@ -1,0 +1,41 @@
+Pilares da POO
+E, H e P
+
+E = Encapsulamento = Capsula == Ocultar partes independentes da implementação, permitindo construir partes invísiveis ao mundo exeterior ou seja, o encapsulamento serve para ocultar partes não necessárias em um objeto e botar ele em um padrão.
+H = Herança 
+P = Poliformismo = Muitas formas de serem feitas
+
+Exemplo prático Controle Remoto
+
+Mensagem == Troca do usuário com o sistema feito
+Interface == Lista de serviços fornecidos por um componente.É o contado com o mundo exterior,que define o que pode ser feito com um objeto dessa classe.
+
+Vantagens para Encapsular 
+1 - Tornar mudanças invisiveis. EX: se caso a pilha de um controle acabar e ele estiver encapsulado bem ele so necessita de uma pilha que dê as mesmas potências.
+2 - Facilitar reutilização do código. 
+3 - Reduzir efeito colateral. EX: Se caso você tocar apenas na parte interna do controle irá quebrar o controle.  
+
+Método abstrato = Irá passar apenas o método exigido
+Interface = todo método abstrato deve ser público 
+
+exemplo:
+
+<<interface>>
+ Controlador
+------------
++ligar()
++desligar()
++abrirMenu()
++fecharMenu()
++maisVolume()
++menosVolume()
++ligarMudo()
++desligarMudo()
++play()
++pause()
+-----------
+
+Classe
+ControleRemoto
+--------------
+ 
