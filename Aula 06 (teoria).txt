@@ -35,7 +35,5 @@ exemplo:
 +pause()
 -----------
 
-Classe
-ControleRemoto
---------------
+
  
