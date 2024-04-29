@@ -1,0 +1,86 @@
+Progama Principal 
+
+int[] lutador = new int[5]
+lutador[0](daddda)
+lutador[1](addadd)
+
+Luta UFC = new Luta()
+
+UFC.marcarluta(lutador[1], lutador[2])
+UFC.lutar
+
+
+
+
+
+
+Classe Luta
+
+//Atributos
+
+private Lutador desafiado;
+private Lutador desafiante;
+private int rounds;
+private boolean aprovada;
+
+//Métodos
+
+public void marcarLuta(){
+  if (lutador[0].getCategoria == lutador[1].getCategoria) e (lutador[0]!= lutador[1]){
+     aprovada = true;
+     desafiado = lutadar[0];
+     desafiante = lutador[1];
+} else{
+     aprovada = false;
+     desafiado = nulo;
+     desafiante = nulo; 
+}
+}
+
+public void Lutar(){
+  if (aprovada){
+  desafiado.apresentar();
+  desafiante.apresentar();
+  
+  
+} else{
+   sout + TAB ("Luta não pode acontecer!")  
+}
+
+
+}
+
+//Métodos Especiais 
+
+public Lutador getDesafiado(){
+ return desafiado;
+}
+
+public void setDesafiado(Lutador dd){
+ this.desafiado = dd;
+}
+
+public Lutador getDesafiante(){
+ return desafiante;
+}
+
+public void setDesafiante(Lutador df){
+ this.desafiante = df;
+}
+
+public int getRounds(){
+ return rounds;
+}
+
+public void setRounds(int r){
+ this.rounds = r; 
+}
+
+public boolean getAprovada(){
+ return aprovada;
+}
+
+public void setAprovada(boolean a){
+ this.aprovada = a;
+}
+
