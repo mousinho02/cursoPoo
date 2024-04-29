@@ -83,4 +83,6 @@ public boolean getAprovada(){
 public void setAprovada(boolean a){
  this.aprovada = a;
 }
-
+switch == escolha 
+case == caso
+break == fimCaso

@@ -16,8 +16,8 @@ public class UFC {
         
           lutador[5] = new Lutador01("Nerdaard", "EUA", 30, 1.81f, 105.7f, 12, 2, 4);
         
-          lutador[1].apresentar();
-          lutador[0].status();
-          
-    }
+          Luta UEC01 = new Luta();
+          UEC01.marcarLuta(lutador[4], lutador[5]);
+          UEC01.Lutar();
+    }      
 }
