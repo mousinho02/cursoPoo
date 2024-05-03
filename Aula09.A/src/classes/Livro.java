@@ -17,17 +17,15 @@ public class Livro implements Publicacao {
        System.out.println("Página atual " + this.getPagAtual());
        System.out.println("O livro está aberto ? " + this.getAberto());
        System.out.println("Quem está lendo o livro ? " + this.getLeitor().getNome());
-       System.out.println("A idade do leitor é : " + leitor.getIdade());
-       System.out.println("O sexo do leitor(a) é : " + leitor.getSexo());
+       System.out.println("A idade do leitor é : " + this.leitor.getIdade());
+       System.out.println("O sexo do leitor(a) é : " + this.leitor.getSexo());
    }
 
    //Métodos Especiais
-   public Livro(String titulo, String autor, int totPaginas, int pagAtual, boolean aberto, Pessoa leitor){
+   public Livro(String titulo, String autor, int totPaginas,  Pessoa leitor){
       this.titulo = titulo;
       this.autor = autor;
       this.totPaginas = totPaginas;
-      this.pagAtual = pagAtual;
-      this.aberto = aberto;
       this.leitor = leitor;
    }
    
@@ -91,7 +89,7 @@ public void folhear(int p) {
 public void avancarPag() {
     this.pagAtual++;
 }
-
+ 
 @Override
 public void voltarPag() {
     this.pagAtual--;
