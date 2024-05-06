@@ -7,7 +7,10 @@ public class Pessoa {
     public void fazerAniver(){
         this.idade++;
     }
-    
+
+    public void detalhes(){
+        System.out.println(nome ", "+ idade", " + sexo);
+    }
     public String getNome(){
         return this.nome;
     }
