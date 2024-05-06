@@ -1,16 +1,16 @@
 public class Aluno extends Pessoa {
-    private boolean matr;
+    private int matr;
     private String curso;
 
     public void cancelarMatr(){
-       this.matr = false;
+       System.out.println("Matricula cancelada")
     }
 
-    public boolean getMatr(){
+    public int getMatr(){
      return this.matr;
     }
     
-    public void setMatr(boolean matr){
+    public void setMatr(int matr){
         this.matr = matr
     }
     

@@ -7,12 +7,7 @@ public class Pessoa {
     public void fazerAniver(){
         this.idade++;
     }
-    public Pessoa(String nome, String sexo, int idade){
-        this.nome = nome;
-        this.sexo = sexo;
-        this.idade = idade;
-    }
-
+    
     public String getNome(){
         return this.nome;
     }
