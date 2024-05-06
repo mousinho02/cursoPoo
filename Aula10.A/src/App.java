@@ -12,15 +12,17 @@ public class App {
 
        p1.setIdade(19);
        p4.setIdade(35);
+
+       p2.setCurso("Informática");
+       p3.setSalario(2500.75f);
+       p4.setSetor("Estoque");
        
        p1.detalhes();
        p2.detalhes();
        p3.detalhes();
        p4.detalhes();
 
-       p2.setCurso("Informática");
-       p3.setSalario(2500.75f);
-       p4.setSetor("Estoque");
+       
 
         
     }
