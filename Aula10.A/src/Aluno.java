@@ -3,7 +3,7 @@ public class Aluno extends Pessoa {
     private String curso;
 
     public void cancelarMatr(){
-       System.out.println("Matricula cancelada")
+       System.out.println("Matricula cancelada");
     }
 
     public int getMatr(){
@@ -11,7 +11,7 @@ public class Aluno extends Pessoa {
     }
     
     public void setMatr(int matr){
-        this.matr = matr
+        this.matr = matr;
     }
     
     public String getCurso(){

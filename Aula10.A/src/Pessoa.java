@@ -9,7 +9,10 @@ public class Pessoa {
     }
 
     public void detalhes(){
-        System.out.println(nome ", "+ idade", " + sexo);
+        System.out.println("Nome : " + this.nome);
+        System.out.println("Idade : " + this.idade);
+        System.out.println("Sexo : " + this.sexo);
+        System.out.println("--------------------------");
     }
     public String getNome(){
         return this.nome;
