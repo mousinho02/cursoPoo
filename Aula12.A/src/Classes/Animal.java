@@ -1,3 +1,5 @@
+package Classes;
+
 public abstract class Animal {
     
     private float peso;

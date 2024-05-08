@@ -1,3 +1,5 @@
+package Classes;
+
 public class Repitil extends Animal {
    
     private String corEscama;
