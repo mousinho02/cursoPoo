@@ -5,6 +5,14 @@ public class Video implements AcoesVideo{
    private float curtidas;
    private boolean reproduzindo;
 
+   public Video(String titulo){
+      this.titulo = titulo;
+      this.avaliacao = 0f;
+      this.views = 0f;
+      this.curtidas = 0f;
+      this.reproduzindo = false;
+   }
+
    public String getTitulo(){
     return this.titulo;
    }
@@ -47,6 +55,13 @@ public class Video implements AcoesVideo{
    @Override
    public void like(){
     this.curtidas ++;
+   }
+   public void detalhes(){
+      System.out.println("Titulo do video : " + this.getTitulo);
+      System.out.println("Avaliação : " + this.getAvaliacao);
+      System.out.println("Visualizações : " + this.getViews);
+      System.out.println("Curtidas : " + this.getCurtidas);
+      System.out.println("Reproduzindo : " + this.getReproduzindo);
    }
 
 }

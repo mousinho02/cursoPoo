@@ -2,6 +2,15 @@ public class Gafanhoto extends Pessoa {
     
     private String login;
     private int totAssistido;
+
+    public Gafanhoto(String nome, int idade, String sexo, String login){
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
+        this.login = login;
+        this.experiencia = 0;
+        this.totAssistido = 0;
+    }
     
     @Override 
     public void ganharExp(){
