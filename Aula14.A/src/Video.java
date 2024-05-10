@@ -7,7 +7,7 @@ public class Video implements AcoesVideo{
 
    public Video(String titulo){
       this.titulo = titulo;
-      this.avaliacao = 0f;
+      this.avaliacao = 1f;
       this.views = 0f;
       this.curtidas = 0f;
       this.reproduzindo = false;
@@ -56,12 +56,10 @@ public class Video implements AcoesVideo{
    public void like(){
     this.curtidas ++;
    }
-   public void detalhes(){
-      System.out.println("Titulo do video : " + this.getTitulo);
-      System.out.println("Avaliação : " + this.getAvaliacao);
-      System.out.println("Visualizações : " + this.getViews);
-      System.out.println("Curtidas : " + this.getCurtidas);
-      System.out.println("Reproduzindo : " + this.getReproduzindo);
+   @Override
+   public String toString(){
+      return "Video [ " + titulo + " , avaliação= " + avaliacao + 
+      " views= " + views + " curtidas= " + curtidas + " reproduzindo= " + reproduzindo + "]";
    }
 
 }

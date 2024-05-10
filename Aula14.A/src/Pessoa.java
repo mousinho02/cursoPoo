@@ -5,7 +5,14 @@ public abstract class Pessoa {
     protected String sexo;
     protected int experiencia;
     public abstract void ganharExp();
-
+    
+    public Pessoa(String nome, int idade, String sexo){
+        this.nome = nome;
+        this.idade = idade;
+        this.sexo = sexo;
+        this.experiencia = 0;
+    }
+    
     public String getNome(){
         return this.nome;
     }
@@ -29,6 +36,10 @@ public abstract class Pessoa {
     }
     public void setExperiencia(int experiencia){
         this.experiencia = experiencia;
+    }
+    @Override 
+    public String toString(){
+        return " { nome= " + nome + " idade= " + idade + " sexo= " + sexo + " experiência= " + experiencia + "}";
     }
 }
 
